@@ -155,23 +155,35 @@ const pizzas= [
 
 //**** a)  Las pizzas que tengan un id impar.******/
 
+console.log("a)  Las pizzas que tengan un id impar son:");
+console.log(" ");
+
 const pizzasImpares = pizzas.filter(pizza => pizza.id % 2 !== 0);
 //*console.log(pizzasImpares);
 pizzasImpares.forEach(pizza => console.log(`La pizza ${pizza.nombre} tiene un id impar y su id es ${pizza.id}`));
 
+console.log(" ");
 //**** b) ¿Hay alguna pizza que valga menos de $600?******/
+console.log("b) ¿Hay alguna pizza que valga menos de $600?");
 
 const pizzasMenosDe600 = pizzas.some(pizza => pizza.precio < 600);
 console.log(`Disculpa, no hay ninguna pizza que su precio sea menos de $600`);
 
+console.log(" ");
 //**** c) El nombre de cada pizza con su respectivo precio.******/
 
+console.log("c) El nombre de cada pizza con su respectivo precio es:");
+console.log(" ");
 pizzas.forEach(pizza => console.log(`La pizza ${pizza.nombre} tiene un precio de $${pizza.precio}`));
 
+console.log(" ");
 //**** d) Todos los ingredientes de cada pizza ******/
 
+console.log("d) Todos los ingredientes de cada pizza son:");
+console.log(" ");
 pizzas.forEach(pizza => {
-    console.log(`Los ingredientes de la pizza ${pizza.nombre} son:`);
+    console.warn(`Los ingredientes de la pizza ${pizza.nombre} son:`);
     pizza.ingredientes.forEach(ingrediente => console.log(ingrediente));
+    console.log(" ");
 });
 
