@@ -167,7 +167,11 @@ console.log(" ");
 console.log("b) ¿Hay alguna pizza que valga menos de $600?");
 
 const pizzasMenosDe600 = pizzas.some(pizza => pizza.precio < 600);
+if (pizzasMenosDe600) {
+    console.log("Si hay pizzas que valen menos de $600");
+} else {    
 console.log(`Disculpa, no hay ninguna pizza que su precio sea menos de $600`);
+}
 
 console.log(" ");
 //**** c) El nombre de cada pizza con su respectivo precio.******/
