@@ -72,6 +72,17 @@ form input{
     text-align: center;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+
+    margin: 0;
+}
+
+form input:focus{
+    outline: none;
+
+}
 
 form label{
     font-size: 40px;
