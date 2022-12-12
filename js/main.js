@@ -148,6 +148,22 @@ const pizzas= [
             "morron",
             "choclo"
         ]
+    },
+    {
+        nombre:"Hawaiana 2.0",
+        id:12,
+        precio:2700,
+        ingredientes:[
+            "muzarella",
+            "salsa",
+            "masa",
+            "jamón",
+            "piña",
+            "azucar negra",
+            "morrones",
+            "cebolla",
+            "choclo"
+        ]
     }
 ]
 
