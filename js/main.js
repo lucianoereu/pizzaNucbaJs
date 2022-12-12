@@ -191,3 +191,33 @@ pizzas.forEach(pizza => {
     console.log(" ");
 });
 
+//**** E2 *****//
+
+const numberValue = document.getElementById("numberId");
+const buttonClick = document.getElementById("buttonId");
+const result = document.getElementById("result");
+const form = document.getElementById("formId");
+const precio = document.getElementById("precio");
+
+
+const mostrarPizza = () => {
+    const number = parseInt(numberValue.value);
+    const pizza = pizzas.find(pizza => pizza.id === number);
+    if (pizza) {
+        result.innerHTML = `La pizza ${pizza.nombre}`;
+        precio.innerHTML = `tiene el valor de $${pizza.precio}`;
+    } else if (numberValue.value === "") {
+        result.innerHTML = `Por favor, ingrese un número`;
+        precio.innerHTML = ``;
+    } else {
+        result.innerHTML = `No hay ninguna pizza con el id ${number}`;
+        precio.innerHTML = ``;
+    }
+};
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    mostrarPizza();
+  });
+
+
